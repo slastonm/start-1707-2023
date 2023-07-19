@@ -1,0 +1,25 @@
+/* h2{
+    color:orange;
+}
+h1{
+    color: orange;
+} */
+
+/* DRY don't repeat yourself */
+h1, h2{
+    color: orange;
+}
+p{
+    color: darkmagenta;
+}
+
+p span{
+    color:darkcyan;
+}
+p strong{
+    color: yellow;
+}
+
+p{
+    color:darkred;
+}
