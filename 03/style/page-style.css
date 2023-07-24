@@ -1,0 +1,74 @@
+/* *{
+
+} */
+
+
+p{
+    color: green;
+}
+span{
+    color: rgb(224, 23, 56);
+}
+p span{
+    color: blueviolet;
+}
+
+#main{
+    color: darkblue;
+}
+
+h1, h2{
+    color: yellow;
+}
+
+.text-center{
+    text-align: center;
+    color: gray;
+}
+div.big-font-size{
+    font-size: 20px;
+}
+/* .text-center.big-font-size{
+    font-size: 20px;
+} */
+ul li:first-child{
+    color: yellow;
+}
+ul li:last-child{
+    color: blue;
+}
+ul li:nth-child(3){
+    color: orange;
+}
+
+a[href="https://example.org"]{
+    color: darkgreen;
+}
+.container{
+    background-color: #e91212;
+    color: #000;
+    /* text-align: left; */
+    text-align: center;
+    /* text-align: right; */
+    /* text-align: justify; */
+
+
+    /* color: black; */
+
+}
+.container:empty{
+    /* background-color: rgb(12, 12, 151); */
+    /* background-color: rgba(12, 12, 151, 0.5); */
+    /* background-color: hsl(150 30% 60%); */
+    background-color: hsl(150 30% 60% / 0.8);   
+    height: 100px;
+}
+body{
+    background-color: lightblue;
+}
+
+p{
+    /* height: 200px; */
+    height: auto;
+    width: 100px;
+}
