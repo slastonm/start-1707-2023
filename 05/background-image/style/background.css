@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+.parent{
+    background-color: gray;
+    height: 1500px;
+    width: 500px;
+    margin: 0 auto;
+    background-image: url('../img/avatar.png');
+
+    /* background-image: url('../img/avatar.png'),url('../img/1.webp'); */
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    padding-left: 600px;
+    color: white;
+    background-size: 100px 100px;
+    /* background-size: contain; */
+    /* background-size: cover; */
+    /* background-position: right center; */
+    background-position: top 100px left 200px;
+}
+/* .parent:hover{
+    background-color: red;
+} */
+.btn{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background-image: url('../img/sprite-icon-29.jpg');
+    /* background-attachment: fixed; */
+}
+.btn.active{
+    background-position: top -15px left -17px;
+}
+.btn.active:hover{
+    background-position: top -96px left -17px;
+}
+.btn.disabled{
+    background-position: top -180px left -17px;
+}
+
+.tree{
+    height: 100px;
+    width: 20px;
+}
+
+.parallax{
+    min-height: 100%;
+    padding-top: 200px;
+    background-image: url('../img/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: scroll; */
+    background-attachment: fixed;
+
+}
+header{
+    height: 100px;
+    margin-bottom: 400px;
+    background-image: url('https://e7.pngegg.com/pngimages/240/603/png-clipart-green-and-black-illustration-superbrothers-sword-sworcery-ep-sprite-platform-game-video-game-animation-sprite-game-3d-computer-graphics.png');
+    /* background-size: 100px 100px; */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+ section {
+    background-color: white;
+    margin-bottom: 350px;
+    padding: 50px;
+}

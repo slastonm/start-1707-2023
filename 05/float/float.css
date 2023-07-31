@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+section{
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid red;
+    /* clear: both; */
+    overflow: hidden;
+}
+img{
+    /* float: left; */
+    float: left;
+    display: block;
+    margin: 50px;
+    width: 200px;
+}
+p{
+    width: 200px;
+    float: right;
+}
+header{
+    background-color: yellow;
+    padding: 50px 0;
+}
+.container{
+    width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.logo{
+    float: left;
+}
+.social{
+    float: right;
+}
