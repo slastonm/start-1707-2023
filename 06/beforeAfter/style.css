@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+/* h1>div{
+    display: inline-block;
+    height: 4px;
+    width: 100px;
+    background-color: yellow;
+} */
+h1::before{
+    content: "";
+    display: inline-block;
+    height: 0px;
+    width: 100px;
+    background-color: orange;
+    margin-bottom: 5px;
+}
+h1::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: rgb(234, 6, 184);
+    margin-bottom: 5px;
+}
+
+h1{
+    text-align: center;
+}
+h1:hover::after{
+    height: 4px;
+}
+h1:hover::before{
+    height: 4px;
+}
+h1:hover{
+    border-bottom: 4px solid red;
+}
+.float-paretn{
+    background-color: green;
+    /* overflow: hidden; */
+    /* overflow: auto; */
+
+}
+.left,.right{
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    position: relative;
+    bottom: 50px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* Clearfix   */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
