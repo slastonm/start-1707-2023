@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    /* width: 1600px; */
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+}
+/* max-widht це менше вказаного значення */
+
+/* @media screen and (max-width: 1200px) {
+    .container{
+        width: 100%;
+        padding: 25px;
+        background-color: rgb(157, 65, 7);
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }  
+}
+@media screen and (max-width: 800px) {
+    .container{
+        background-color: rgb(7, 157, 107);
+        row-gap: 150px;
+    }  
+} */
+
+/* min-width працює від вказаного значення до безкінечності */
+
+
+/* @media screen and (min-width: 1200px) {
+    .container{
+        width: 100%;
+        padding: 25px;
+        background-color: rgb(121, 5, 96);
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }  
+}
+
+@media screen and (min-width: 1600px) {
+    .container{
+        color: white;
+        background-color: rgb(12, 11, 11);
+    }  
+} */
+
+
+@media screen and (min-width: 600px) and (max-width:1200px) {
+    .container{
+        color: white;
+        background-color: rgb(12, 11, 11);
+    }  
+}
+
+@media (min-aspect-ratio: 8/5){
+    body{
+        font-size: 20px;
+    }
+}
+@media (max-aspect-ratio: 8/5){
+    body{
+        font-size: 20px;
+    }
+}
+
+@media print {
+    body{
+        background-color: white;
+        color: black;
+    }
+}
+
+.img{
+    width: 40%;
+    background-color: red;
+    padding: 10%;
+}
+.text-block{
+    width: 55%;
+    padding: 3vw;
+    background-color: gray;
+}
