@@ -1,0 +1,91 @@
+.i-grid{
+    padding: 20px;
+    background-color: yellow;
+    display: inline-grid;
+}
+.grid{
+    padding: 20px;
+    background-color: rgb(14, 40, 235);
+    display: grid;
+    /* grid-template-columns: 100px 200px 400px 200px 100px; */
+    /* grid-template-columns: 10vw 20vw 40vw 20vw 40vw; */
+    /* grid-template-columns: 150px auto 400px; */
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: repeat(3, 100px 200px); */
+    /* grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) ; */
+    grid-template-rows: 100px 200px 100px 100px 500px;
+    grid-column-gap: 40px;
+    grid-row-gap: 100px;
+
+}
+.grid-item{
+    padding: 10px;
+    background-color: lightblue;
+}
+.grid-item:nth-child(2){
+    background-color: violet;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.grid-item:nth-child(3){
+    background-color: rgb(105, 8, 105);
+    /* grid-column-start: -1;
+    grid-column-end: -2; */
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.grid-item:nth-child(4){
+    background-color: rgb(8, 176, 162);
+}
+
+header,
+nav,
+aside,
+main,
+nav,
+footer{
+    padding: 150px;
+    text-align: center;
+    color: white;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template: 
+    "header-block header-block header-block"
+    "nav main aside"
+    "footer footer footer";
+}
+header{
+    background-color: yellow;
+    grid-area: header-block;
+}
+nav{
+    background-color: black;
+    grid-area: nav;
+}
+main{
+    background-color: goldenrod;
+    grid-area: main;
+}
+aside{
+    background-color: blueviolet;
+    grid-area: aside;
+}
+footer{
+    background-color: green;
+    grid-area: footer;
+}
+@media screen and (max-width:1000px) {
+    section{
+        grid-template: 
+        "header-block header-block header-block"
+        "nav nav nav"
+        "aside aside aside"
+        "main main main"
+        "footer footer footer";
+    }
+}
