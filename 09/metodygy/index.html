@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <style>
+        header div>img{
+            width: 100%;
+        }
+
+
+    </style>
+    <header>
+        <!-- <div><img src="" alt=""></div> -->
+        <div>
+            <a href="#">
+                <img src="" alt="">
+            </a>
+        </div>    
+        <ul>
+            <li>Milk</li>
+            <li>Orange</li>
+            <li>Water</li>
+        </ul>
+    </header>
+    <h3>
+        Object-Oriented CSS
+    </h3>
+    <style>
+        .list-element{
+            color:black;
+        }
+    </style>
+    <ul class="list-block">
+        <li class="list-item">
+            Home
+        </li>
+    </ul>
+
+    <h3>
+        Atomic CSS ( ACSS)
+    </h3>
+    <div class="mt-10 fs-20 m-mt-5">
+        Hello
+    </div>
+    
+    <h3>
+        Block Element Modifier
+    </h3>
+    <header>
+        <!-- <div><img src="" alt=""></div> -->
+        <div class="header__logo__block">
+            <a href="#">
+                <img class="header__logo__block__image" src="" alt="">
+            </a>
+        </div>    
+        <ul class="list__block list__block--inline ">
+            <li class="list__block__item">Milk</li>
+            <li>Orange</li>
+            <li>Water</li>
+        </ul>
+    </header>
+    <style>
+        .header__logo__block{
+            width: 30%;
+        }
+        .header__logo__block__image{
+            width: 100%;
+        }
+        .list__block{
+            display: flex;
+            flex-direction: column;
+        }
+        .list__block--inline{
+            flex-direction: row;
+        }
+        /* header div>img за БЕМ  такі стилі не допустимі */
+
+
+    </style>
+    <h3>
+        Scalable and Modular Architecture for CSS (SMACSS)
+    </h3>
+    <button class="btn btn-danger btn-sm">
+        Hello
+    </button>
+</body>
+</html>
