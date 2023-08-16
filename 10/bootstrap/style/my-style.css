@@ -1,0 +1,13 @@
+.navbar-toggler.collapsed .open{
+    display: block;
+}
+.navbar-toggler.collapsed .close{
+    display: none;
+}
+
+.navbar-toggler .open{
+    display: none;
+}
+.navbar-toggler .close{
+    display: block;
+}
